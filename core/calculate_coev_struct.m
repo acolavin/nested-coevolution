@@ -1,10 +1,5 @@
-function coev_struct = calculate_coev_struct(msa_struct, pairwised, varargin)
+function coev_struct = calculate_coev_struct(msa_struct, pairwised, metrics)
 
-if nargin == 4
-    metrics = varargin{1};
-else
-    metrics = {'fn'};
-end
 
 if sum(ismember(metrics, {'fn', 'mi', 'di'})) > 0
     [DI, MI, FN] = dca(msa_struct.dcaint);
