@@ -1,7 +1,9 @@
 function pdb_struct = load_pdb_struct(pdbcode, chain, seq)
 
 % Load structure
-pdb = getpdb(pdbcode);
+websave([pdbcode '.pdb'], ['https://files.rcsb.org/download/' pdbcode '.pdb']);
+pdb = pdbread([pdbcode '.pdb']);
+% pdb = getpdb(pdbcode);
 if length(pdb.Model) > 1
     pdb.Model = pdb.Model(1);
 end
