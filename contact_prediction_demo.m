@@ -1,5 +1,5 @@
 %% Demo of Nested Coevolution
-
+% for DCA-based structural contact analysis
 %% FASTA files and PDB Structures
 fasta_file = 'msas/KH-1_PF00013_full_1WVN.fasta';
 pdb_code = '1WVN';
