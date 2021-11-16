@@ -5,4 +5,4 @@ Nested Coevolution (NC) is a correction method for other covariation or coevolut
 
 ## Demo
 
-Look in the `demo.m` script for an example of calculating coevolution. 
+Look in either `*demo.m` script for an annotated example of calculating coevolution. 
